@@ -1,6 +1,6 @@
 # Sesión 01: Introducción a Machine Learning
 
-#### Objetivo: Construir las bases de Machine Learning (estructura, funcionamiento, algoritmos en Python 3).    
+#### Objetivo: Definir el concepto de Machine Learning y enlistar algunas de sus aplicaciones; explicar por qué Python es una herramienta ideal para programar Machine Learning.    
 
 ¡Bienvenido a tu curso de Machine Learning (ML) con Python! Dado que esta es tu primera sesión, quisiera comentarte como será el método de trabajo a partir de hoy:
 
@@ -9,9 +9,9 @@
 
 Cabe destacar que Machine Learning **no es una disciplina única**: A diferencia de un curso de programación estándar donde puedes desarrollar un proyecto desde cero y en cada sesión lo mejoras, en este curso cada uno de los temas de las sesiones irá encaminado a enseñarte una herramienta diferente. 
 
-Puede que para tu proyecto necesites una -o varias- de las herramientas que te mostramos. Sin embargo, debes de conocerlas todas y aprender en donde una herramienta funciona mejor que otra. 
+Puede que para tu proyecto necesites una -o varias- de las herramientas que te mostramos. Sin embargo, debes de conocerlas todas y aprender en dónde una herramienta funciona mejor que otra. 
 
-¡Bienvenido nuevamente, y comencemos!
+¡Bienvenido nuevamente y comencemos!
 
 ## Exactamente... ¿Qué es eso de Machine Learning? 
 
@@ -29,7 +29,7 @@ Por lo general, nosotros los programadores creamos sistemas que tienen la siguie
 
 ![Programación tradicional](imgassets/TraditionalProgramming.png)
 
-Los programadores sabemos las entradas que queremos, sabemos las salidas que queremos, y generamos un programa que tome las entradas y construya las salidas. En este ejemplo, un sistema de control de un horno para cocinar y formar pan 
+Los programadores sabemos las entradas que queremos, sabemos las salidas que queremos y generamos un programa que tome las entradas y construya las salidas. En este ejemplo, un sistema de control de un horno para cocinar y formar pan: 
 
 > *(Si, sé que el proceso de fabricar pan no es estrictamente así, pero supongamos que trabajamos en una empresa de pan a gran escala)*
 
@@ -67,13 +67,13 @@ Para poder responder esta pregunta, primero comencemos con un reto muy simple.
  *(Spoilers en las siguientes líneas!)*
 
 
-Aprender consiste en *Reconocer los errores y corregirlos para tratar de no cometerlos de nuevo.* Tanto en Machine Learning como en la vida diaria, si no eres capaz de reconocer un error, no eres capaz de corregirlo, por tanto no aprenderás.
+Aprender consiste en *Reconocer los errores y corregirlos para tratar de no cometerlos de nuevo.* Tanto en Machine Learning como en la vida diaria, si no eres capaz de reconocer un error no eres capaz de corregirlo; por tanto, no aprenderás.
 
 El principal indicador de que estás aprendiendo (o de que tu sistema está aprendiendo) es que **conforme el tiempo pasa, la probabilidad de cometer un error disminuye drásticamente.**
 
 ![La práctica hace al maestro!](imgassets/PracticeMakesPerfect.jpg)
 
-Existen varias maneras de aprender, pero hablar de todas ellas sería desviar nuestra conversación hacia la rama de la psicología del aprendizaje. La que nos interesa por ahora va más encaminada hacia los procesos condicionantes de Pavlov: 
+Existen varias maneras de aprender, pero hablar de todas ellas sería desviar nuestra conversación hacia la rama de la psicología del aprendizaje. La que nos interesa por ahora va más encaminado hacia los procesos condicionantes de Pavlov: 
 
 - Un refuerzo positivo: Cada vez que el sistema hace lo que yo espero, le doy una recompensa.
 - Un refuerzo negativo: Cada vez que el sistema hace algo que no esperaba, le doy un castigo.
@@ -127,9 +127,9 @@ En este caso la esfera desciende hasta llegar al mínimo error. Esto quiere deci
 
 ## Método de aprendizaje 2: Comparativas.
 
-Entonces, un método de aprendizaje que te puede servir muchisimo (sobre todo en las siguientes dos sesiones) es el método de comparativas. Y es bastante sencillo de implementar: 
+Entonces, un método de aprendizaje que te puede servir muchísimo (sobre todo en las siguientes dos sesiones) es el método de comparativas. Y es bastante sencillo de implementar: 
 
-- Toma un dato y comparalo contra otros. 
+- Toma un dato y compáralo contra otros. 
   - Si el dato es parecido, quiere decir que son del mismo conjunto. 
   - Si el dato no se parece mucho, quiere decir que no son del mismo conjunto. 
 
@@ -189,7 +189,7 @@ Con una simple resta puedes generar un sistema de detección de movimiento. Mejo
 
 ## Aplicaciones de Machine Learning en la Industria
 
-Machine Learning ha tenido un auge enorme por una simple razón: Problemas que antes eran intratables ahora pueden atacarse con estas herramientas. Si todavía no tienes un proyecto en mente que quieras hacer, podemos ver algunas cuantas áreas que se han visto beneficiadas de Machine Learning.
+Machine Learning ha tenido un auge enorme por una simple razón: Problemas que antes eran intratables ahora pueden atacarse con estas herramientas. Si todavía no tienes un proyecto en mente que quieras hacer, podemos ver algunas cuantas áreas que se han visto beneficiadas por el Machine Learning.
 
 ### Industria Manufacturera:
 
@@ -240,14 +240,14 @@ Antes de comenzar a hablar de descriptores, necesitaremos que armemos parejas pa
 
 ###  Entonces ¿Qué es un descriptor?
 
-Después de este reto, vamos a ver que es un descriptor: Una máquina es muy buena para entender cualquier cosa que tenga que ver con números. Y un descriptor sirve para asociarle números a propiedades del mundo real. 
+Después de este reto, vamos a ver qué es un descriptor: Una máquina es muy buena para entender cualquier cosa que tenga que ver con números. Y un descriptor sirve para asociarle números a propiedades del mundo real. 
 
 La función de un descriptor es esa misma: *describir* un objeto por medio de números y propiedades, de tal manera que los algoritmos de ML sean capaces de tratarlos para diferenciar entre un objeto y otro. La manera en la que estos objetos son descritos es por medio de sensores.
 
 En esta imagen podemos ver varios descriptores: Una onda de sonido representada numéricamente, un espacio de color, o un algoritmo llamado *Local Binary Pattern* (LBP)
 ![Descriptores](imgassets/Descriptor1.png)
 
-Veamos como funcionan de manera práctica con el siguiente ejemplo: Imaginemos que tienes un separador de frutas (como manzanas). Los objetos rojos son manzanas maduras, los objetos verdes pueden ser frutas inmaduras, y los objetos de otro color podrían ser cualquier otra cosa que no es una fruta.
+Veamos cómo funcionan de manera práctica con el siguiente ejemplo: Imaginemos que tienes un separador de frutas (como manzanas). Los objetos rojos son manzanas maduras, los objetos verdes pueden ser frutas inmaduras, y los objetos de otro color podrían ser cualquier otra cosa que no es una fruta.
 
 ![Lleve sus frutas](imgassets/Fruits.png)
 
@@ -263,9 +263,9 @@ No siempre los descriptores que elegimos son los mejores para la tarea. Tenemos 
 
 Igualmente, hay propiedades que no funcionan de la misma manera en todo el mundo. Por ejemplo, supongamos que tratas de clasificar a personas por su estatura, y si dices:
 
-> *Asumamos que los hombres son mas altos que las mujeres*
+> *Asumamos que los hombres son más altos que las mujeres*
 
-Esto puede ser cierto en casi todos los países del mundo, excepto en Holanda, ¡Donde las mujeres suelen ser mas altas que los hombres!
+Esto puede ser cierto en casi todos los países del mundo, excepto en Holanda, ¡donde las mujeres suelen ser mas altas que los hombres!
 
 ## ¿Por qué programar Machine Learning con Python?
 Python 3 es un lenguaje altamente flexible y es muy sencillo de aprender. Muchos programadores reconocen que Pyhton es el mejor lenguaje para empezar si no tienes experiencia como programador. 
@@ -310,5 +310,5 @@ Además de ello, tus aplicaciones puedes subirlas rápidamente a un servicio Web
 Con lo que hemos visto en esta sesión, es momento de pasar al reto final de la sesión 01:
 
 ## Reto 05:
-> Con lo visto hasta ahora, define un proyecto de Machine Learning que crearás al final del módulo. Puedes discutir conmigo su viabilidad y la estrategia que vamos a seguir. Recuerda: No pienses en la tecnología. Piensa en como la tecnología puede ayudar al mundo. 
+> Con lo visto hasta ahora, define un proyecto de Machine Learning que crearás al final del módulo. Puedes discutir conmigo su viabilidad y la estrategia que vamos a seguir. Recuerda: No pienses en la tecnología - piensa en cómo la tecnología puede ayudar al mundo. 
 ![ML](imgassets/MachineLearning.gif)
